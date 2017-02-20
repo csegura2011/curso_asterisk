@@ -18,4 +18,7 @@ $ sudo apt-get install wget
     - Asterisk depende de una gran cantidad de bibliotecas open source que se instalarán
     al ejecutarse el script de instalación.
 
+### 1.2.- Script `asterisk_carga_feriados.sh`
+
+
 

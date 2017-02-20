@@ -22,17 +22,22 @@ WORKDIR=${TIMESTAMP}_asterisk_sources
 #----------------------------------------------------------------------------------------------------------------------#
 # DEPENDENCIAS DEL SCRIPT                                                                                              #
 #----------------------------------------------------------------------------------------------------------------------#
-# sudo apt-get -y install wget    # wget: programa para descargar archivos via HTTP
+sudo apt-get -y install wget    # wget: programa para descargar archivos via HTTP
 
-# Crear directorio para descargar archivos
-mkdir $WORKDIR
-cd $WORKDIR
 
 #----------------------------------------------------------------------------------------------------------------------#
 # PASO 1: Descargar Código Fuente de Asterisk y Software Asociado                                                      #
 #----------------------------------------------------------------------------------------------------------------------#
+# Crear directorio para descargar archivos
+mkdir $WORKDIR
+cd $WORKDIR
 wget ${BASE_URL}/${ASTERISK_URL}
+wget ${BASE_URL}/${DAHDI_URL}
+wget ${BASE_URL}/${LIBPRI_URL}
 
+#----------------------------------------------------------------------------------------------------------------------#
+# PASO 2: Descargar Código Fuente de Asterisk y Software Asociado                                                      #
+#----------------------------------------------------------------------------------------------------------------------#
 
 
 
